@@ -103,15 +103,21 @@ def tts(text: str, speaker: str, post: str):
         },
         404: {
             "description": "Item not Found",
-            "content": {"application/json": {"example": {"Detail": "Unknown Post / Audio Not Generated Yet"}}},
+            "content": {
+                "application/json": {
+                    "example": {"Detail": "Unknown Post / Audio Not Generated Yet"}
+                }
+            },
         },
-    }
+    },
 )
 def audio(post: str, speaker: str):
     if not os.path.exists(f"./{post}"):
-        raise HTTPException(status_code=404, detail="{\"Detail\": \"Unknown Post\"}")
+        raise HTTPException(status_code=404, detail='{"Detail": "Unknown Post"}')
     if not os.path.exists(f"./{post}/{speaker}.wav"):
-        raise HTTPException(status_code=404, detail="{\"Detail\": \"Audio Not Generated Yet\"}")
+        raise HTTPException(
+            status_code=404, detail='{"Detail": "Speaker Not Generated Yet"}'
+        )
     audiofile = os.path.join("./", post, f"{speaker}.wav")
     print(audiofile)
     return FileResponse(audiofile)
