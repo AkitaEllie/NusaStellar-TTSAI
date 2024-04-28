@@ -1,3 +1,6 @@
 *pth
 *wav
 config.json
+venv
+__pycache__/*
+__pycache__
