@@ -1,4 +1,4 @@
-![Not-Yet-Added]()
+![logo-white](https://github.com/AkitaEllie/NusaStellar-TTSAI/assets/48817307/32be75f1-bfe7-47bf-8893-1b608964807c)
 
 
 # NusaStellar TTS AI API Server
