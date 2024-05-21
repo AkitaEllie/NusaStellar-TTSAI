@@ -46,7 +46,7 @@ For more information and examples, please refer to the `/docs` endpoint on the s
 
 
 ## Run Locally
-Please note that this project was made in Python 3.11.
+Please note that this project WILL require Python 3.11 due to one of its dependencies.
 
 Clone the project
 ```bash
