@@ -83,3 +83,19 @@ Start the server
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+
+## FAQ
+
+#### I get an error when installing requirements!!
+
+There are 3 possible causes
+   - You have spotty internet, and the download failed
+   - You have the wrong python version, in which one of the dependencies won't compile
+   - you don't have visual studio 2022, or visual studio build tools, please install.
+
+
+## Planned
+
+- More models, and more languages supported
+
+- Better configuration that won't require code editing.
